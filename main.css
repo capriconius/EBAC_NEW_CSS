@@ -1,0 +1,198 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: rgb(241, 240, 240);
+}
+
+section img {
+    width: 100%;
+    height: auto;
+}
+
+.container {
+    width:100%;
+    margin: 0 auto;
+}
+
+header .container {
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.malware {
+    width:50%;
+}
+
+header li {
+    display: inline;
+    padding-right:16px;
+}
+
+
+header a {
+    text-decoration: none;
+    color:blue;
+}
+
+header a:hover {
+    color:aqua;
+}
+
+
+header {
+    background-color: chartreuse;
+    padding:20px;
+}
+
+.loja {
+    display: flex;
+    margin-top: 40px;
+    width:50%;
+}
+
+.produtos {
+    width:50%;
+}
+
+.loja img {
+    margin-bottom: 30px;
+    width:50%;
+        border-radius:10px;
+}
+
+.loja-tex {
+    margin-left: 30px;
+    width:100%;
+}
+
+.loja h1 {
+    color: chartreuse;
+    border-bottom: 3px solid;
+    margin-bottom:30px;
+    margin-top:30px;
+}
+
+.produtos h1 {
+    color: chartreuse;
+    border-bottom: 3px solid;
+    margin-bottom:16px;
+}
+
+.produtos img {
+    height: 248px;
+    border-radius:10px;
+}
+
+.set button {
+    background-color: chartreuse;
+    color: black;
+    border-radius: 5px;
+    text-decoration: none;
+    width:100%;
+    padding:5px;
+}
+
+.set button:hover {
+    background-color: blue;
+    color: aliceblue;
+}
+
+.set{
+    display: grid;
+    grid-template-columns: repeat(4, 24%);
+    column-gap: 1.29%;
+}
+
+@media screen and (max-width:640px ) {
+
+    header .container {
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+    .malware {
+    width:100%;
+}
+
+    .loja  {
+    width:90%;
+    display:block;
+    margin-bottom:50px;
+}
+
+.loja img {
+    width:100%;
+}
+
+.set  {
+    display:block;
+}
+
+.produtos  {
+    width:90%;
+}
+
+.produtos h1 {
+    width:100% ;
+}
+
+.set button {
+    margin-bottom:40px;
+    width:100%;
+}
+
+.loja-tex {
+    margin: 0;
+}
+
+}
+
+@media screen and (min-width:641px) and (max-width: 1023px) {
+
+    header .container {
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.malware {
+    width:85%;
+}
+
+.set{
+    display:grid;
+    grid-template-columns: repeat(2,49%);
+}
+
+.loja-tex {
+    margin: 0;
+}
+
+    .loja  {
+    width:80%;
+    display:block;
+    margin-bottom:50px;
+}
+
+.loja img {
+    width:100%;
+}
+
+
+.produtos  {
+    width:80%;
+}
+
+.set button {
+    width:100%;
+}
+
+
+
+}
